@@ -1,73 +1,36 @@
-*{
-    box-sizing: border-box;
+.background {
+    background: url(../images/background2.jpg) no-repeat;
+    background-size: cover;
+    display: block;
+    min-height: 425px;
+    position: relative;
 }
 
-header{
-    padding-top: 25px;
-    border-top: 5px solid #5bbd50;
-}
-
-.container{
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-#logo{
-    float: left;
-    padding-top: 20px;
-    
-}
-
-.menu{
-    float: right;
-    padding-top: 80px;
-    font-weight: bold;
-}
-
-.background{
-    background: url(../images/background2.jpg)no-repeat;
-	display: block;
-    min-height: 500px;
-	position: relative;
-}
-
-.container h2{
+.back h3 {
     text-align: center;
     color: #FFF;
-    
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: 'Lobster Two', cursive;
+    margin-top: 90px;
 }
 
-.container h3{
+.textbox h3 {
     margin-top: 35px;
     color: #FFF;
     font-weight: 400;
     font-size: 22px;
 }
 
-.search {
-    display: inline-block;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.search input{
+.textbox input {
     border: hidden;
     font-size: 18px;
     font-weight: 400;
     margin-top: 5px;
-    width: 70%;
+    width: 100%;
     min-height: 41px;
     border-radius: 4px;
-    padding: 7px;
+    padding: 7px 15px;
 }
 
-.icon {
-    background-color: #5bbd50;
-    margin-left: 20px;
-    padding: 10px 25px;
-    border-radius: 4px;
-    cursor: pointer;
-}
