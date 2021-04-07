@@ -24,6 +24,7 @@
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/7d8a442366.js" crossorigin="anonymous"></script>
 
+
   <title>JS109 Project</title>
 </head>
 
@@ -31,30 +32,13 @@
   <header class="bg-light sticky-top">
     <div class="container">
       <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
-        <a href="./"><img src="./resources/images/logo.png" alt="" width="120" height="80"></a>
+        <a href="index.html"><img src="./resources/images/logo.png" alt="" width="120" height="80"></a>
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle link-dark btn btn-warning  " href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Your Place
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Hanoi</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Da Nang City</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Ho Chi Minh City</a></li>
-            </ul>
-          </li>
-          <li><a href="#" class="nav-link px-2 link-secondary ">Cuisine</a></li>
-          <li><a href="#" class="nav-link px-2 link-dark">Order</a></li>
-          <li><a href="#" class="nav-link px-2 link-dark">Help</a></li>
-          <li><a href="#" class="nav-link px-2 link-dark">Contact</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 link-secondary">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Popular Restaurants</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Help</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Contact</a></li>
         </ul>
 
         <div class="col-md-3 text-end">
@@ -73,30 +57,32 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4">
-          <div class="textbox">
-            <h3>Address</h3>
-            <input type="text" placeholder="Nguyen Chi Thanh">
+      <form action="" id="input">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="textbox">
+              <h3>Address</h3>
+              <input type="text" placeholder="547 Kings Highway" name="Address">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="textbox">
+              <h3>Restaurant Name</h3>
+              <input type="text" placeholder="Dolce Vita" name="resName">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="textbox">
+              <h3>Cuisine</h3>
+              <input type="text" placeholder="French" name="Cuisine">
+            </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-          <div class="textbox">
-            <h3>Restaurant Name</h3>
-            <input type="text" placeholder="King BBQ">
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-          <div class="textbox">
-            <h3>Cuisine</h3>
-            <input type="text" placeholder="Thit nuong">
-          </div>
-        </div>
-      </div>
-      <div class="d-grid gap-2 col-2 mt-4 mx-auto">
-        <button class="btn btn-success btn-md" type="button"><i class="fa fa-search" style="color: #FFF;
+        <div class="d-grid gap-2 col-2 mt-4 mx-auto">
+          <button class="btn btn-success btn-md" type="submit"><i class="fa fa-search" style="color: #FFF;
           font-size: 25px;"></i></button>
-      </div>
+        </div>
+      </form>
     </div>
   </section>
 
@@ -112,37 +98,39 @@
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 mt-4">
           <div class="card h-100">
-            <img src="./resources/images/001.jpg" class="card-img-top" alt="...">
+            <img src="./resources/images/001.jpg" class="card-img-top rec-img" alt="...">
             <div class="card-body">
-              <h5 class="card-title">KingBBQ</h5>
-              <p class="card-text">KingBBQ đem đến cho khách hàng hơn 200 món ăn, được chắt lọc từ Tinh hoa ẩm thực Hàn
-                Quốc. Tất cả được chính đầu bếp Hàn Quốc chế biến, khéo léo kết hợp trong nhiều combo, set ăn hấp dẫn
-                và vô vàn món ngon không giới hạn.</p>
+              <h5 class="card-title">The Silver Spur</h5>
+              <p class="card-text">The “Spur,” as it soon came to be known, quickly became a favorite of the working
+                class as well as the locals. Because of the round-the-clock work schedules of the dam builders it was
+                not uncommon to see the Spur fully occupied as the youth arrived for school just down the street.</p>
               <a href="#" class="btn btn-warning">Explore</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 mt-4">
           <div class="card h-100">
-            <img src="./resources/images/002.jpg" class="card-img-top" alt="...">
+            <img src="./resources/images/002.jpg" class="card-img-top rec-img" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Thế Giới Hải Sản</h5>
-              <p class="card-text">Hệ thống Nhà hàng Thế Giới Hải Sản – “Con gì đang bơi chúng tôi đều có” -
-                mang hơi thở và tâm hồn của biển cùng sự biến tấu mới mẻ, Thế Giới Hải Sản là chốn
-                bình yên, an nhiên, tịnh tại cho những người yêu biển và yêu thích những
-                món ăn chế biến từ hải sản.</p>
+              <h5 class="card-title">Cousin's Pizzeria</h5>
+              <p class="card-text">Excellent Pizza, everyday! That is what you will find at Cousin's Pizzeria & More,
+                proudly giving our community and the surrounding region the finest quality food since 1981. With a
+                varied menu, we have more than enough choice for everyone, and more than enough to keep you coming back
+                for more.</p>
               <a href="#" class="btn btn-warning">Explore</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 mt-4">
           <div class="card h-100">
-            <img src="./resources/images/003.jpg" class="card-img-top" alt="...">
+            <img src="./resources/images/003.png" class="card-img-top rec-img" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Lẩu Phan</h5>
-              <p class="card-text">Nhà hàng Lẩu Phan tự hào là thương hiệu buffet bò Úc đi đầu cũng như lớn mạnh nhất Hà
-                Nội. Thực khách nhất định sẽ ấn tượng với menu lẩu gồm 3 vị đặc trưng: Lẩu Kim chi cay tê nức mũi, lẩu
-                Thái đậm đà xuýt xoa và vị lẩu nấm thanh ngọt.</p>
+              <h5 class="card-title">Giovanni Ristorante</h5>
+              <p class="card-text">Giovanni Ristorante moved to Nashville in 2008 after 27 years in Mid-Town Manhattan.
+                It has become Nashville’s best Italian restaurant serving the best Italian food you have always desired.
+                They serve the best homemade pastas, exquisite risotto, seasonal black and white truffles, imported
+                cheeses, salumi, veal, prime beef, fresh seafood and the best homemade Italian bread, breadsticks,
+                desserts and gelato. </p>
               <a href="#" class="btn btn-warning">Explore</a>
             </div>
           </div>
@@ -160,26 +148,26 @@
           </div>
           <div class="row">
             <div class="col-lg-6 col-md-8 col-sm-8 col-xs-6 pt-4">
-              <a href="#"><img src="./resources/images/gogi.png" class="img-thumbnail" alt=""></a>
+              <a href="#"><img src="./resources/images/top1.png" class="img-thumbnail top-res" alt=""></a>
             </div>
             <div class="col-lg-6 col-md-8 col-sm-8 col-xs-6 pt-4">
-              <a href="#"><img src="./resources/images/haidilao.jpg" class="img-thumbnail" alt=""></a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-6 pt-4">
-              <a href="#"><img src="./resources/images/gogi.png" class="img-thumbnail" alt=""></a>
-            </div>
-            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-6 pt-4">
-              <a href="#"><img src="./resources/images/haidilao.jpg" class="img-thumbnail" alt=""></a>
+              <a href="#"><img src="./resources/images/top2.png" class="img-thumbnail top-res" alt=""></a>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-6 col-md-8 col-sm-8 col-xs-6 pt-4">
-              <a href="#"><img src="./resources/images/gogi.png" class="img-thumbnail" alt=""></a>
+              <a href="#"><img src="./resources/images/top3.png" class="img-thumbnail top-res" alt=""></a>
             </div>
             <div class="col-lg-6 col-md-8 col-sm-8 col-xs-6 pt-4">
-              <a href="#"><img src="./resources/images/haidilao.jpg" class="img-thumbnail" alt=""></a>
+              <a href="#"><img src="./resources/images/top4.png" class="img-thumbnail top-res" alt=""></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-6 pt-4">
+              <a href="#"><img src="./resources/images/top5.png" class="img-thumbnail top-res" alt=""></a>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-6 pt-4">
+              <a href="#"><img src="./resources/images/top6.png" class="img-thumbnail top-res" alt=""></a>
             </div>
           </div>
         </div>
@@ -190,90 +178,60 @@
           <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
               <div class="card">
-                <img src="./resources/images/crab.jpg" class="card-img-top h-100" alt="...">
-                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Cuisin
-                    Name</a></div>
+                <img src="./resources/images/crab.jpg" class="card-img-top top-cuis" alt="...">
+                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Seafood</a>
+                </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
               <div class="card">
-                <img src="./resources/images/crab.jpg" class="card-img-top h-100" alt="...">
-                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Cuisin
-                    Name</a></div>
+                <img src="./resources/images/pizza.jpg" class="card-img-top top-cuis" alt="...">
+                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Pizza</a>
+                </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
               <div class="card">
-                <img src="./resources/images/crab.jpg" class="card-img-top h-100" alt="...">
-                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Cuisin
-                    Name</a></div>
+                <img src="./resources/images/burger.jpg" class="card-img-top top-cuis" alt="...">
+                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#"
+                    role="button">Hamburger</a></div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
               <div class="card">
-                <img src="./resources/images/crab.jpg" class="card-img-top h-100" alt="...">
-                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Cuisin
-                    Name</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
-              <div class="card">
-                <img src="./resources/images/crab.jpg" class="card-img-top h-100" alt="...">
-                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Cuisin
-                    Name</a></div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
-              <div class="card">
-                <img src="./resources/images/crab.jpg" class="card-img-top h-100" alt="...">
-                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Cuisin
-                    Name</a></div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
-              <div class="card">
-                <img src="./resources/images/crab.jpg" class="card-img-top h-100" alt="...">
-                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Cuisin
-                    Name</a></div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
-              <div class="card">
-                <img src="./resources/images/crab.jpg" class="card-img-top h-100" alt="...">
-                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Cuisin
-                    Name</a></div>
+                <img src="./resources/images/steak.jpg" class="card-img-top top-cuis" alt="...">
+                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#"
+                    role="button">Beafsteak</a></div>
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row mt-4">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
               <div class="card">
-                <img src="./resources/images/crab.jpg" class="card-img-top h-100" alt="...">
-                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Cuisin
-                    Name</a></div>
+                <img src="./resources/images/chicken.jpg" class="card-img-top top-cuis" alt="...">
+                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Chicken</a>
+                </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
               <div class="card">
-                <img src="./resources/images/crab.jpg" class="card-img-top h-100" alt="...">
-                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Cuisin
-                    Name</a></div>
+                <img src="./resources/images/sandwitch.jpg" class="card-img-top top-cuis" alt="...">
+                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#"
+                    role="button">Sandwiches</a></div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
               <div class="card">
-                <img src="./resources/images/crab.jpg" class="card-img-top h-100" alt="...">
-                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Cuisin
-                    Name</a></div>
+                <img src="./resources/images/salad.jpg" class="card-img-top top-cuis" alt="...">
+                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Salads</a>
+                </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
               <div class="card">
-                <img src="./resources/images/crab.jpg" class="card-img-top h-100" alt="...">
-                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Cuisin
-                    Name</a></div>
+                <img src="./resources/images/sushi.jpg" class="card-img-top top-cuis" alt="...">
+                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Sushi</a>
+                </div>
               </div>
             </div>
           </div>
@@ -328,6 +286,7 @@
       </div>
     </div>
   </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>
