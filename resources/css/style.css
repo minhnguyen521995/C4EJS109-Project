@@ -7,6 +7,14 @@
     position: relative;
 }
 
+.background2 {
+    background: url(../images/background2.jpg) no-repeat;
+    background-size: cover;
+    display: block;
+    min-height: 250px;
+    position: relative;
+}
+
 .back h3 {
     text-align: center;
     color: #FFF;

@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"
     type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!--JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
@@ -52,34 +53,40 @@
     <div class="container">
       <div class="row ">
         <div class="col-sm-12 col-md-12 col-lg-12">
-          <div class="back">
+          <div class="back" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="50" data-aos-duration="1000"
+            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
             <h3>What Are You Looking For?</h3>
           </div>
         </div>
       </div>
-      <form action="" id="input">
+      <form action="./search.html" method="get" target="_blank" id="input">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="textbox">
+            <div class="textbox" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="300" data-aos-duration="1000"
+              data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
               <h3>Address</h3>
-              <input type="text" placeholder="547 Kings Highway" name="Address">
+              <input type="text" placeholder="547 Kings Highway" name="address">
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="textbox">
+            <div class="textbox" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="300" data-aos-duration="1000"
+              data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
               <h3>Restaurant Name</h3>
               <input type="text" placeholder="Dolce Vita" name="resName">
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="textbox">
+            <div class="textbox" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="300" data-aos-duration="1000"
+              data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
               <h3>Cuisine</h3>
-              <input type="text" placeholder="French" name="Cuisine">
+              <input type="text" placeholder="French" name="cuisine">
             </div>
           </div>
         </div>
         <div class="d-grid gap-2 col-2 mt-4 mx-auto">
-          <button class="btn btn-success btn-md" type="submit"><i class="fa fa-search" style="color: #FFF;
+          <button class="btn btn-success btn-md" type="submit" data-aos="zoom-in" data-aos-offset="50"
+            data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+            data-aos-anchor-placement="top-center"><i class="fa fa-search" style="color: #FFF;
           font-size: 25px;"></i></button>
         </div>
       </form>
@@ -97,19 +104,21 @@
       </div>
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 mt-4">
-          <div class="card h-100">
+          <div class="card h-100" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000"
+            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
             <img src="./resources/images/001.jpg" class="card-img-top rec-img" alt="...">
             <div class="card-body">
               <h5 class="card-title">The Silver Spur</h5>
               <p class="card-text">The “Spur,” as it soon came to be known, quickly became a favorite of the working
                 class as well as the locals. Because of the round-the-clock work schedules of the dam builders it was
                 not uncommon to see the Spur fully occupied as the youth arrived for school just down the street.</p>
-              <a href="#" class="btn btn-warning">Explore</a>
+              <a href="https://www.silverspurrestaurant.com/" target="_blank" class="btn btn-success">Explore</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 mt-4">
-          <div class="card h-100">
+          <div class="card h-100" data-aos="fade-up" data-aos-offset="100" data-aos-delay="150" data-aos-duration="1000"
+            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
             <img src="./resources/images/002.jpg" class="card-img-top rec-img" alt="...">
             <div class="card-body">
               <h5 class="card-title">Cousin's Pizzeria</h5>
@@ -117,12 +126,13 @@
                 proudly giving our community and the surrounding region the finest quality food since 1981. With a
                 varied menu, we have more than enough choice for everyone, and more than enough to keep you coming back
                 for more.</p>
-              <a href="#" class="btn btn-warning">Explore</a>
+              <a href="https://www.cousinspizzeriamenu.com/" class="btn btn-success" target="_blank">Explore</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 mt-4">
-          <div class="card h-100">
+          <div class="card h-100" data-aos="fade-up" data-aos-offset="100" data-aos-delay="250" data-aos-duration="1000"
+            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
             <img src="./resources/images/003.png" class="card-img-top rec-img" alt="...">
             <div class="card-body">
               <h5 class="card-title">Giovanni Ristorante</h5>
@@ -131,7 +141,7 @@
                 They serve the best homemade pastas, exquisite risotto, seasonal black and white truffles, imported
                 cheeses, salumi, veal, prime beef, fresh seafood and the best homemade Italian bread, breadsticks,
                 desserts and gelato. </p>
-              <a href="#" class="btn btn-warning">Explore</a>
+              <a href="https://www.giovanninashville.com/" class="btn btn-success" target="_blank">Explore</a>
             </div>
           </div>
         </div>
@@ -143,92 +153,122 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4">
-          <div class="restaurant">
+          <div class="restaurant" data-aos="fade-left" data-aos-offset="100" data-aos-delay="50"
+            data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+            data-aos-anchor-placement="top-center">
             <h3>Top Restaurants</h3>
           </div>
           <div class="row">
             <div class="col-lg-6 col-md-8 col-sm-8 col-xs-6 pt-4">
-              <a href="#"><img src="./resources/images/top1.png" class="img-thumbnail top-res" alt=""></a>
+              <a href="https://www.cousinspizzeriamenu.com/" target="_blank" data-aos="fade-down" data-aos-offset="100"
+                data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                data-aos-anchor-placement="top-center"><img src="./resources/images/top1.png"
+                  class="img-thumbnail top-res" alt=""></a>
             </div>
             <div class="col-lg-6 col-md-8 col-sm-8 col-xs-6 pt-4">
-              <a href="#"><img src="./resources/images/top2.png" class="img-thumbnail top-res" alt=""></a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-6 pt-4">
-              <a href="#"><img src="./resources/images/top3.png" class="img-thumbnail top-res" alt=""></a>
-            </div>
-            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-6 pt-4">
-              <a href="#"><img src="./resources/images/top4.png" class="img-thumbnail top-res" alt=""></a>
+              <a href="https://www.chinasunfl.com/" target="_blank" data-aos="fade-down" data-aos-offset="100"
+                data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                data-aos-anchor-placement="top-center"><img src="./resources/images/top2.png"
+                  class="img-thumbnail top-res" alt=""></a>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-6 col-md-8 col-sm-8 col-xs-6 pt-4">
-              <a href="#"><img src="./resources/images/top5.png" class="img-thumbnail top-res" alt=""></a>
+              <a href="https://www.robertopizzeria.com/" target="_blank" data-aos="fade-down" data-aos-offset="0"
+                data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                data-aos-anchor-placement="top-center"><img src="./resources/images/top3.png"
+                  class="img-thumbnail top-res" alt=""></a>
             </div>
             <div class="col-lg-6 col-md-8 col-sm-8 col-xs-6 pt-4">
-              <a href="#"><img src="./resources/images/top6.png" class="img-thumbnail top-res" alt=""></a>
+              <a href="https://www.crazyoven.com/" target="_blank" data-aos="fade-down" data-aos-offset="0"
+                data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                data-aos-anchor-placement="top-center"><img src="./resources/images/top4.png"
+                  class="img-thumbnail top-res" alt=""></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-6 pt-4">
+              <a href="https://www.khalilbiryani.com/" target="_blank" data-aos="fade-down" data-aos-offset="-100"
+                data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                data-aos-anchor-placement="top-center"><img src="./resources/images/top5.png"
+                  class="img-thumbnail top-res" alt=""></a>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-6 pt-4">
+              <a href="https://madeinpuertoricony.com/" target="_blank" data-aos="fade-down" data-aos-offset="-100"
+                data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                data-aos-anchor-placement="top-center"><img src="./resources/images/top6.png"
+                  class="img-thumbnail top-res" alt=""></a>
             </div>
           </div>
         </div>
         <div class="col-lg-8 col-md-8 col-sm-8">
-          <div class="food">
+          <div class="food" data-aos="fade-left" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000"
+            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
             <h3>Top Cuisines</h3>
           </div>
           <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
-              <div class="card">
-                <img src="./resources/images/crab.jpg" class="card-img-top top-cuis" alt="...">
-                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Seafood</a>
+              <div class="card" data-aos="fade-down" data-aos-offset="100" data-aos-delay="500" data-aos-duration="1000"
+                data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
+                <img src="./resources/images/american.jpg" class="card-img-top top-cuis" alt="...">
+                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#"
+                    role="button">American</a>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
-              <div class="card">
+              <div class="card" data-aos="fade-down" data-aos-offset="100" data-aos-delay="600" data-aos-duration="1000"
+                data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
                 <img src="./resources/images/pizza.jpg" class="card-img-top top-cuis" alt="...">
                 <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Pizza</a>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
-              <div class="card">
+              <div class="card" data-aos="fade-down" data-aos-offset="100" data-aos-delay="700" data-aos-duration="1000"
+                data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
                 <img src="./resources/images/burger.jpg" class="card-img-top top-cuis" alt="...">
-                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#"
-                    role="button">Hamburger</a></div>
+                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Burgers</a>
+                </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
-              <div class="card">
-                <img src="./resources/images/steak.jpg" class="card-img-top top-cuis" alt="...">
-                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#"
-                    role="button">Beafsteak</a></div>
+              <div class="card" data-aos="fade-down" data-aos-offset="100" data-aos-delay="800" data-aos-duration="1000"
+                data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
+                <img src="./resources/images/Italian.jpg" class="card-img-top top-cuis" alt="...">
+                <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Italian</a>
+                </div>
               </div>
             </div>
           </div>
           <div class="row mt-4">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
-              <div class="card">
+              <div class="card" data-aos="fade-down" data-aos-offset="0" data-aos-delay="900" data-aos-duration="1000"
+                data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
                 <img src="./resources/images/chicken.jpg" class="card-img-top top-cuis" alt="...">
                 <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Chicken</a>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
-              <div class="card">
+              <div class="card" data-aos="fade-down" data-aos-offset="0" data-aos-delay="1000" data-aos-duration="1000"
+                data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
                 <img src="./resources/images/sandwitch.jpg" class="card-img-top top-cuis" alt="...">
                 <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#"
                     role="button">Sandwiches</a></div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
-              <div class="card">
+              <div class="card" data-aos="fade-down" data-aos-offset="0" data-aos-delay="1100" data-aos-duration="1000"
+                data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
                 <img src="./resources/images/salad.jpg" class="card-img-top top-cuis" alt="...">
                 <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Salads</a>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
-              <div class="card">
+              <div class="card" data-aos="fade-down" data-aos-offset="0" data-aos-delay="1200" data-aos-duration="1000"
+                data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
                 <img src="./resources/images/sushi.jpg" class="card-img-top top-cuis" alt="...">
                 <div class="card-header text-center"><a class="btn btn-light fw-bold" href="#" role="button">Sushi</a>
                 </div>
@@ -286,7 +326,13 @@
       </div>
     </div>
   </footer>
-  <script src="index.js"></script>
+  <script src=""></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
 </body>
 
 </html>
