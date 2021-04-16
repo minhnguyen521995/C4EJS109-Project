@@ -8,36 +8,6 @@ for (let i of topCuisine) {
 }
 
 function renderCard(data) {
-  // let myDiv2 = document.createElement('div');
-  // myDiv2.classList = 'col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4';
-  // let myCard = document.createElement('div');
-  // myCard.classList = 'card h-100';
-  // myCard.style = 'width: 18rem';
-  // let myDiv3 = document.createElement('div');
-  // myDiv3.classList = 'card-body';
-  // let cardName = document.createElement('h5');
-  // cardName.classList = 'card-title';
-  // let cardAdd = document.createElement('p');
-  // cardAdd.classList = 'card-text';
-  // let cardNumb = document.createElement('p');
-  // cardNumb.classList = 'card-text';
-  // let cardWeb = document.createElement('a');
-  // cardWeb.classList = 'btn btn-success';
-  // cardWeb.target = '_blank';
-  // cardWeb.textContent = 'Explore';
-  // myDiv.appendChild(myDiv2);
-  // myDiv2.appendChild(myCard);
-  // myCard.appendChild(myDiv3);
-  // myDiv3.appendChild(cardName);
-  // myDiv3.appendChild(cardAdd);
-  // myDiv3.appendChild(cardNumb);
-  // myDiv3.appendChild(cardWeb);
-  // cardName.textContent = data.restaurant_name;
-  // cardAdd.textContent = 'Add: ' + data.address.formatted;
-  // cardNumb.textContent = 'Tel: ' + data.restaurant_phone;
-  // if (data.restaurant_website !== "") {
-  //     cardWeb.href = data.restaurant_website;
-  // } else { cardWeb.href = `https://www.google.com.vn/search?q=${data.restaurant_name}`; }
   let linkWebsite = "";
   if (data.restaurant_website !== "") {
     linkWebsite = data.restaurant_website;
@@ -53,10 +23,12 @@ function renderCard(data) {
   </div>
 </div>
 </div>`;
+  let myDiv = document.getElementById("a");
   myDiv.innerHTML += html;
 }
 
 let getData2 = async (name) => {
+  renderLoading();
   try {
     let preData = await fetch(
       `https://api.documenu.com/v2/restaurants/search/fields?restaurant_name=${name}&exact=true&size=40&key=83be9ffe9365f50847d8fe2488bb5dce`
@@ -75,6 +47,7 @@ let getData2 = async (name) => {
 };
 
 let getData1 = async (address) => {
+  renderLoading();
   try {
     let preData = await fetch(
       `https://api.documenu.com/v2/restaurants/search/fields?address=${address}&exact=true&size=40&key=83be9ffe9365f50847d8fe2488bb5dce`
@@ -93,6 +66,7 @@ let getData1 = async (address) => {
 };
 
 let getData3 = async (cuisine) => {
+  renderLoading();
   try {
     let preData = await fetch(
       `https://api.documenu.com/v2/restaurants/search/fields?cuisine=${cuisine}&exact=true&size=40&key=83be9ffe9365f50847d8fe2488bb5dce`
@@ -156,3 +130,9 @@ form2.onsubmit = (e) => {
   form2.address.value = "";
   form2.cuisine.value = "";
 };
+
+function renderLoading() {
+  let myDiv = document.getElementById("a");
+  myDiv.innerHTML = `<img src = "./resources/images/loading.gif"  class="img-fluid" style="margin: auto;
+  height: 200px; width: 200px">`;
+}

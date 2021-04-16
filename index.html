@@ -25,7 +25,6 @@
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/7d8a442366.js" crossorigin="anonymous"></script>
 
-
   <title>JS109 Project</title>
 </head>
 
@@ -219,7 +218,7 @@
               <div class="card" data-aos="fade-down" data-aos-offset="100" data-aos-delay="600" data-aos-duration="1000"
                 data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
                 <img src="./resources/images/pizza.jpg" class="card-img-top top-cuis" alt="...">
-                <div class="card-header text-center"><a class="btn btn-light fw-bold" >Pizza</a>
+                <div class="card-header text-center"><a class="btn btn-light fw-bold">Pizza</a>
                 </div>
               </div>
             </div>
@@ -242,7 +241,7 @@
           </div>
           <div class="row mt-4">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
-              <div class="card" data-aos="fade-down" data-aos-offset="0" data-aos-delay="900" data-aos-duration="1000"
+              <div class="card" data-aos="fade-down" data-aos-offset="50" data-aos-delay="900" data-aos-duration="1000"
                 data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
                 <img src="./resources/images/chicken.jpg" class="card-img-top top-cuis" alt="...">
                 <div class="card-header text-center"><a class="btn btn-light fw-bold">Chicken</a>
@@ -250,14 +249,14 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
-              <div class="card" data-aos="fade-down" data-aos-offset="0" data-aos-delay="1000" data-aos-duration="1000"
+              <div class="card" data-aos="fade-down" data-aos-offset="50" data-aos-delay="1000" data-aos-duration="1000"
                 data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
                 <img src="./resources/images/sandwitch.jpg" class="card-img-top top-cuis" alt="...">
                 <div class="card-header text-center"><a class="btn btn-light fw-bold">Sandwiches</a></div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
-              <div class="card" data-aos="fade-down" data-aos-offset="0" data-aos-delay="1100" data-aos-duration="1000"
+              <div class="card" data-aos="fade-down" data-aos-offset="50" data-aos-delay="1100" data-aos-duration="1000"
                 data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
                 <img src="./resources/images/salad.jpg" class="card-img-top top-cuis" alt="...">
                 <div class="card-header text-center"><a class="btn btn-light fw-bold">Salads</a>
@@ -265,7 +264,7 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 g-4">
-              <div class="card" data-aos="fade-down" data-aos-offset="0" data-aos-delay="1200" data-aos-duration="1000"
+              <div class="card" data-aos="fade-down" data-aos-offset="50" data-aos-delay="1200" data-aos-duration="1000"
                 data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
                 <img src="./resources/images/sushi.jpg" class="card-img-top top-cuis" alt="...">
                 <div class="card-header text-center"><a class="btn btn-light fw-bold">Sushi</a>
@@ -277,7 +276,34 @@
       </div>
     </div>
   </section>
-
+  <section class="section4">
+    <div class="container">
+      <div class="row bg">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <div class="images">
+            <h3>Enjoy Exclusive Food <br />
+              Order any of these</h3>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <div class="point">
+            <p><span>&#10152;</span><a href="https://www.bjsrestaurants.com/#beerclub">Party Order</a></p>
+            <p><span>&#10152;</span><a href="https://www.greentomatogrill.com/order-delivery">Home Made Food</a></p>
+            <p><span>&#10152;</span><a href="https://www.bigchefonline.com/">Diet Food</a></p>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-5">
+          <figure class="imgs">
+            <img src="resources/images/abc.png" class="img-fluid" alt="" />
+          </figure>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <div class="btn btn-success btn-md" style="margin: 45px 20px;
+          padding: 10px;"> <a href="#" style="text-decoration:none; color: white; font-weight: 700; font-size: 20px;">Order Now</a> </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer class="section8">
     <div class="container">
       <div class="row">
@@ -328,7 +354,8 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      once: true
+      once: true,
+      throttleDelay: 50
     });
   </script>
 </body>
