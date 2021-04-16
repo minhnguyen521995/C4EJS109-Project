@@ -25,7 +25,7 @@
     <script src="https://kit.fontawesome.com/7d8a442366.js" crossorigin="anonymous"></script>
 
 
-    <title>results</title>
+    <title>filter</title>
 
 <body>
     <header class="bg-light sticky-top">
@@ -78,10 +78,8 @@
         </div>
       </section>
     <section>
-        <div class="container" id ="c" style="padding: 60px 0 60px">
-            <div class="row" id="a">
-
-            </div>
+        <div class="container" style="padding: 60px 0 60px">
+            <div class="row" id="a"></div>
         </div>
     </section>
     <footer class="section8">
@@ -132,14 +130,8 @@
     </footer>
     <script src="index.js"></script>
     <script>
-        let apiKey = JSON.parse(localStorage.getItem('data'))
-        if(apiKey.type == "name"){
-            getData2(apiKey.value);
-        }else if(apiKey.type == "address"){
-            getData1(apiKey.value);
-        }else{
-            getData3(apiKey.value);
-        }
+        let apiKey = JSON.parse(localStorage.getItem('cuisine'))
+        getData3(apiKey);
     </script>
 </body>
 
