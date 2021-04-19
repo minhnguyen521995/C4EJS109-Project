@@ -29,25 +29,34 @@
 </head>
 
 <body>
-  <header class="bg-light sticky-top">
-    <div class="container">
-      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
-        <a href="index.html"><img src="./resources/images/logo.png" alt="" width="120" height="80"></a>
 
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li class="nav-item"><a href="index.html" class="nav-link px-2 link-secondary">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Popular Restaurants</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Help</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Contact</a></li>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5 mr-5" href="index.html"><img src="./resources/images/logo.png" alt="" width="120" height="80"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link px-2 active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 link-dark" href="#">Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 link-dark" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+          </li>
         </ul>
-
-        <div class="col-md-3 text-end">
-          <button type="button" class="btn btn-outline-success me-2">Login</button>
-          <button type="button" class="btn btn-success">Sign-up</button>
-        </div>
-      </header>
+        <form class="d-flex" action="http://google.com/search" target="_blank">
+          <input class="form-control me-2" name="q" type="search" placeholder="Google Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-  </header>
+  </nav>
   <section class="background">
     <div class="container">
       <div class="row ">
@@ -278,15 +287,15 @@
   </section>
   <section class="section4">
     <div class="container">
-      <div class="row bg">
+      <div class="row bg" data-aos="zoom-in">
         <div class="col-lg-3 col-md-3 col-sm-3">
-          <div class="images">
+          <div class="images" data-aos="zoom-in" data-aos-delay="500">
             <h3>Enjoy Exclusive Food <br />
-              Order any of these</h3>
+              Explore any of these</h3>
           </div>
         </div>
         <div class="col-lg-2 col-md-2 col-sm-2">
-          <div class="point">
+          <div class="point" data-aos="zoom-in" data-aos-delay="800">
             <p><span>&#10152;</span><a href="https://www.bjsrestaurants.com/#beerclub">Party Order</a></p>
             <p><span>&#10152;</span><a href="https://www.greentomatogrill.com/order-delivery">Home Made Food</a></p>
             <p><span>&#10152;</span><a href="https://www.bigchefonline.com/">Diet Food</a></p>
@@ -294,12 +303,13 @@
         </div>
         <div class="col-lg-5 col-md-5 col-sm-5">
           <figure class="imgs">
-            <img src="resources/images/abc.png" class="img-fluid" alt="" />
+            <img src="resources/images/abc.png" data-aos="zoom-in" data-aos-delay="1100" class="img-fluid" alt="" />
           </figure>
         </div>
         <div class="col-lg-2 col-md-2 col-sm-2">
           <div class="btn btn-success btn-md" style="margin: 45px 20px;
-          padding: 10px;"> <a href="#" style="text-decoration:none; color: white; font-weight: 700; font-size: 20px;">Order Now</a> </div>
+          padding: 10px;" data-aos="zoom-in" data-aos-delay="1400"> <a href="#"
+              style="text-decoration:none; color: white; font-weight: 700; font-size: 20px;">Explore Now</a> </div>
         </div>
       </div>
     </div>
@@ -351,6 +361,24 @@
     </div>
   </footer>
   <script src="index.js"></script>
+  <script>
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({

@@ -28,25 +28,35 @@
     <title>filter</title>
 
 <body>
-    <header class="bg-light sticky-top">
-        <div class="container">
-            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
-                <a href="index.html"><img src="./resources/images/logo.png" alt="" width="120" height="80"></a>
-
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li class="nav-item"><a href="index.html" class="nav-link px-2 link-dark">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Popular Restaurants</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Help</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Contact</a></li>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5 mr-5" href="index.html"><img src="./resources/images/logo.png" alt="" width="120"
+                    height="80"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link px-2 link-dark" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2 link-dark" href="#">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2 link-dark" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
                 </ul>
-
-                <div class="col-md-3 text-end">
-                    <button type="button" class="btn btn-outline-success me-2">Login</button>
-                    <button type="button" class="btn btn-success">Sign-up</button>
-                </div>
-            </header>
+                <form class="d-flex" action="http://google.com/search" target="_blank">
+                    <input class="form-control me-2" name="q" type="search" placeholder="Google Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-    </header>
+    </nav>
     <section class="background2">
         <div class="container">
             <form action="" id="input2">
@@ -129,6 +139,24 @@
         </div>
     </footer>
     <script src="index.js"></script>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     <script>
         let apiKey = JSON.parse(localStorage.getItem('cuisine'))
         getData3(apiKey);
